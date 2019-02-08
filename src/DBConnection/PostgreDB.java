@@ -33,16 +33,4 @@ public class PostgreDB {
         
         url = "jdbc:postgresql://localhost:5432/" + this.dbName;
     }
-    
-    public static void main(String[] args) {
-        PostgreDB db = new PostgreDB("postgres", "Carp1997", "carp");
-        
-        if (db.getConnection() == null) {
-            System.out.println("Connection failed.");
-            return;
-        }
-        
-        System.out.println("Connection successful!");
-    }
-    
 }
